@@ -97,3 +97,157 @@ $ git commit -m "add reports directory"
  create mode 100644 reports/summary.md
 
 24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/reports (feature-update)
+$ touch file{1,2,3}.txt
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/reports (feature-update)
+$ mv ../data/raw-data.csv ../data/input-data.csv
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/reports (feature-update)
+$ ls ../data
+input-data.csv
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/reports (feature-update)
+$ cd ../scripts
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ mkdir backup
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ cp ./*.py ./backup
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ rm ../docs/documentation.md
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ git commmit -m "Update project files"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ git commit -m "Update project files"
+On branch feature-update
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../data/raw-data.csv
+        deleted:    ../docs/documentation.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../commands.txt
+        ../data/input-data.csv
+        ../reports/file1.txt
+        ../reports/file2.txt
+        ../reports/file3.txt
+        backup/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ git add ../data/input-data.csv
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ git add ../reportsfile{1,2,3}.txt
+fatal: pathspec '../reportsfile1.txt' did not match any files
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ git add ../commands.txt
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ git add backup/
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ git rm ../docs/documentation.md
+rm 'docs/documentation.md'
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ git commit -m "Update project files"
+[feature-update d111e2e] Update project files
+ 6 files changed, 99 insertions(+), 1 deletion(-)
+ create mode 100644 commands.txt
+ create mode 100644 data/input-data.csv
+ delete mode 100644 docs/documentation.md
+ create mode 100644 scripts/backup/01-setup.py
+ create mode 100644 scripts/backup/02-data-cleaning.py
+ create mode 100644 scripts/backup/03-data-modelling.py
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ git checkout main
+Switched to branch 'main'
+D       data/raw-data.csv
+Your branch is up to date with 'origin/main'.
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (main)
+$ touch .gitignore
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (main)
+$ echo temp/dataset0?.csv >> .gitignore
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (main)
+$ ls .gitignore
+.gitignore
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (main)
+$ cat .gitignore
+temp/dataset0?.csv
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (main)
+$ git add .gitignore
+warning: in the working copy of 'scripts/.gitignore', LF will be replaced by CRLF the next time Git touches it
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (main)
+$ git commit -m "Add .gitignore file"
+[main 30be8bf] Add .gitignore file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 scripts/.gitignore
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (main)
+$ rm .gitignore
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (main)
+$ git checkout update-feature
+error: pathspec 'update-feature' did not match any file(s) known to git
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (main)
+$ git checkout feature-update
+Switched to branch 'feature-update'
+D       data/raw-data.csv
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ touch .gitignore
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ echo temp/dataset0?.csv >> .gitignore
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ cat .gitignore
+temp/dataset0?.csv
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ git add ./.gitignore
+warning: in the working copy of 'scripts/.gitignore', LF will be replaced by CRLF the next time Git touches it
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ git git rm ./.gitignore
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ git rm ./.gitignore
+error: the following file has changes staged in the index:
+    scripts/.gitignore
+(use --cached to keep the file, or -f to force removal)
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$ git commit -a -m "add .gitignore file"
+[feature-update 32ac04a] add .gitignore file
+ 2 files changed, 1 insertion(+)
+ delete mode 100644 data/raw-data.csv
+ create mode 100644 scripts/.gitignore
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/scripts (feature-update)
+$
