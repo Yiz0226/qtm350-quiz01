@@ -1,0 +1,99 @@
+24981@DESKTOP-J8TFR8U MINGW64 ~
+$ pwd
+/c/Users/24981
+
+24981@DESKTOP-J8TFR8U MINGW64 ~
+$ cd "C:\Users\24981\OneDrive\文档\GitHub"
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub
+$ git clone https://github.com/Yiz0226/qtm350-quiz01
+fatal: destination path 'qtm350-quiz01' already exists and is not an empty directory.
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub
+$ ^C
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub
+$ git clone https://github.com/Yiz0226/qtm350-quiz01
+Cloning into 'qtm350-quiz01'...
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 14 (delta 2), reused 10 (delta 1), pack-reused 0 (from 0)
+Receiving objects: 100% (14/14), done.
+Resolving deltas: 100% (2/2), done.
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub
+$ cd "C:\Users\24981\OneDrive\文档\GitHub\qtm350-quiz01"
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01 (main)
+$ touch commands.txt
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01 (main)
+$ ls
+README.md  commands.txt  data/  docs/  scripts/
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01 (main)
+$ git branch
+* main
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01 (main)
+$ git --show-toplevel
+unknown option: --show-toplevel
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01 (main)
+$ --show-toplevel
+bash: --show-toplevel: command not found
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01 (main)
+$ git branch feature-update
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01 (main)
+$ git checkout feature-update
+Switched to branch 'feature-update'
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01 (feature-update)
+$ mkdir reports
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01 (feature-update)
+$ cd ./reports
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/reports (feature-update)
+$ touch summary.md
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/reports (feature-update)
+$ echo "This document provides a summary of the project updates." >> summary.md
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/reports (feature-update)
+$ git commit -m "Add reports directory"
+On branch feature-update
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../commands.txt
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/reports (feature-update)
+$ git add .
+warning: in the working copy of 'reports/summary.md', LF will be replaced by CRLF the next time Git touches it
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/reports (feature-update)
+$ git commid -m"add reports directory"
+git: 'commid' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/reports (feature-update)
+$ git commit -m "add reports directory"
+[feature-update f2f28ee] add reports directory
+ 1 file changed, 1 insertion(+)
+ create mode 100644 reports/summary.md
+
+24981@DESKTOP-J8TFR8U MINGW64 ~/OneDrive/文档/GitHub/qtm350-quiz01/reports (feature-update)
